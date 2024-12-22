@@ -1,0 +1,61 @@
+.cont {
+    margin: 10px;
+    padding: 20px;
+}
+
+#h11 {
+    font-family: monospace;
+    line-height: 5rem;
+    color: #e0e0e0;
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: 0.6rem;
+    text-shadow: 
+        2px 2px 4px rgba(98, 22, 128, 0.5), /* Subtle shadow */
+        0 0 10px rgba(98, 22, 128, 0.7),    /* Glow effect */
+        0 0 20px rgba(98, 22, 128, 0.9);
+}
+
+#h22 {
+    font-family: monospace;
+    line-height: 2;
+    color: #e0e0e0;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-shadow: 
+        2px 2px 4px rgba(98, 22, 128, 0.5), /* Subtle shadow */
+        0 0 10px rgba(98, 22, 128, 0.1),    /* Glow effect */
+        0 0 20px rgba(98, 22, 128, 0.8);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #h11 {
+        font-size: 60px;
+        line-height: 4rem;
+        letter-spacing: 0.4rem;
+    }
+
+    #h22 {
+        font-size: 1.5rem;
+        line-height: 1.8;
+        letter-spacing: 0.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #h11 {
+        font-size: 40px;
+        line-height: 3rem;
+        letter-spacing: 0.3rem;
+    }
+
+    #h22 {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        letter-spacing: 0.05rem;
+    }
+}
+
+

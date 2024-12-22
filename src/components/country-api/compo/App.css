@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=lora:wght@400;500;600;700&diplay=swap');
+
+
+.container{
+  width: 1400px;
+  padding: 0px 15px;
+  margin: auto !important;
+  margin-top: 110px; /* Adjust this value based on your navbar height */
+  padding: 20px;
+}
+
+.header{
+  margin-top: 70px;
+  width: 100%;
+  height: 80px;
+  line-height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: hsl(209, 23%, 22%);
+  z-index: 1000;
+}
+
+.header h5{
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.country__bottom{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.country__card{
+  width: 250px;
+  border-radius: 5px;
+  background: hsl(209, 23%, 22%);
+  color: white;
+}
+
+.country__img img{
+  width: 100%;
+  border-radius: 5px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.all__country__wrapper{
+  margin-top: 900px;
+}
+
+.country__data{
+  padding: 20px;
+}
+
+.country__data h3{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.country__data h6{
+  margin-bottom: 10px;
+  font-weight: 400;
+  opacity: 80%;
+}
+
+.country__bottom h4{
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+input{
+  padding: 10px 25px;
+  color: white;
+  border-radius: 5px;
+  background: hsl(209, 23%, 22%);
+  border: none;
+  outline: none;
+  margin-bottom: 50px;
+}
+
+::placeholder{
+  color: white;
+}
+
+.country__top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+select{
+  padding: 10px 25px ;
+  background: hsl(209, 23%, 22%);
+  margin-bottom: 50px;
+  margin-right: 250px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+}
+
+

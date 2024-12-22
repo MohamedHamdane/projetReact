@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+web:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium web' , sans-serif;
+}
+
+
+:root{
+    --mainColor: #29335c ;
+    --mainColorLight : #6767aa ;
+    --secondaryColor : #db2b39 ;
+    --textColor : #eee ;
+
+    /* --darkmode: var(--mainColor);
+    --lightmode: var(--mainColorLight) */
+}
+
+/* header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+} */
+
+header {
+    position: fixed; /* Make the header fixed at the top */
+    top: 0; /* Align it to the top of the viewport */
+    left: 0; /* Ensure it spans from the left edge */
+    width: 100%; /* Make it take up the full width */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 5rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+#imgg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+nav a{
+    margin: 0 ;
+    color: var(--textColor);
+    text-decoration: none;
+    padding: 50px;
+}
+
+nav a:hover{
+    color: var(--secondaryColor);
+}
+
+
+header .nav_btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width : 1024px){
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transform: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav{
+        transform: none;
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* Main.css */
+/* header {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+} */
+
+header.dark {
+    background-color: #6767aa ;
+    color: black;
+}
+
+/* html.dark{
+    background-color: #29335c;
+} */
+
+/* .all.dark{
+    background-color: #29335c;
+
+} */
+
+
+.dark-mode-toggle {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #6767aa;
+    border: none;
+}
+
+.dark-mode-toggle:hover{
+    background-color: #29335c;
+    color: #eee;
+    /* transform: scale(1.2rem); */
+}
+
+
+/* Main.css */
+
+body {
+    background-color: #6767aa;
+    color: #eee;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #29335c;
+    color: white;
+}
+
+/* Light mode styles */
+#h11.dark-mode {
+    font-family: monospace;
+    line-height: 5rem;
+    color: #f5f5f5; /* Light text color for contrast */
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: 0.6rem;
+    text-shadow: 
+        3px 3px 5px rgba(0, 0, 0, 0.4),  /* Dark subtle shadow */
+        0 0 10px rgba(255, 255, 255, 0.2); /* Soft glow */
+}
+
+#h22.dark-mode {
+    font-family: monospace;
+    line-height: 2;
+    color: #e0e0e0; /* Slightly dimmed light color */
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.3),  /* Dark subtle shadow */
+        0 0 8px rgba(255, 255, 255, 0.1); /* Softer glow */
+}
+
+
