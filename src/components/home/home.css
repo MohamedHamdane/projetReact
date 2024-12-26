@@ -11,8 +11,8 @@
     font-weight: 900;
     letter-spacing: 0.6rem;
     text-shadow: 
-        2px 2px 4px rgba(98, 22, 128, 0.5), /* Subtle shadow */
-        0 0 10px rgba(98, 22, 128, 0.7),    /* Glow effect */
+        2px 2px 4px rgba(98, 22, 128, 0.5), 
+        0 0 10px rgba(98, 22, 128, 0.7),    
         0 0 20px rgba(98, 22, 128, 0.9);
 }
 
@@ -24,12 +24,11 @@
     font-weight: 700;
     letter-spacing: 0.2rem;
     text-shadow: 
-        2px 2px 4px rgba(98, 22, 128, 0.5), /* Subtle shadow */
-        0 0 10px rgba(98, 22, 128, 0.1),    /* Glow effect */
+        2px 2px 4px rgba(98, 22, 128, 0.5), 
+        0 0 10px rgba(98, 22, 128, 0.1),    
         0 0 20px rgba(98, 22, 128, 0.8);
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     #h11 {
         font-size: 60px;
@@ -59,3 +58,49 @@
 }
 
 
+.cont {
+    padding: 20px;
+  }
+  
+  .cont.dark {
+    background-color: #333;
+    color: white;
+  }
+  
+  h1, h2 {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1.dark, h2.dark {
+    color: #ddd;
+  }
+  
+  select {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+
+
+  /* Fixed position for the language selector */
+.language-selector {
+    position: fixed;
+    top: 20px; /* Adjust the distance from the top */
+    left: 20px; /* Adjust the distance from the left */
+    z-index: 1000; /* Ensures it's above other content */
+    background-color: white; /* Optional, to make it stand out */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .language-selector select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  

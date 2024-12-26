@@ -9,45 +9,30 @@ import Home from "./components/home/home";
 import Main from "./components/mainNav/Main";
 import Contact from "./components/Contact/Contact";
 import Aboutme from "./components/Aboutme/Aboutme";
-// import Notfound from "./components/notfound/NotFound";
-
-// import ThemeProvider from "./components/context/ThemeContext";
+import Notfound from "./components/notfound/NotFound";
 import { ThemeProvider } from "./components/context/ThemeContext";
-// import Toggler from "./components/context/Toggler";
 
 function App() {
   return (
     <div className="all">
       <Router>
-
-        {/* <Navbar/> */}
-        {/* <Home/> */}
         <ThemeProvider>
-          {/* <Home/> */}
-        <Main/>
-
+          <Main/>
         </ThemeProvider>
-      {/* <Calc/> */}
-      {/* <Cards/> */}
-      {/* <Count/> */}
-      {/* <Toodo/> */}
-      <Routes>
-        <Route path="/home" element={<Home/>}></Route>
-        <Route path="/calculater" element={<Calc/>}></Route>
-        <Route path="/cards" element={<Cards/>}></Route>
-        <Route path="/country-api" element={<Count/>}></Route>
-        <Route path="/todo" element={<Toodo/>}></Route>
-        {/* <Route path="/*" element={<Notfound/>}></Route> */}
-        <Route path="/home"></Route>
-        <Route path="/navbar" element={<Navbar/>}></Route>
-        <Route path="/Contact" element={<Contact/>}></Route>
-        <Route path="/Aboutme" element={<Aboutme/>}></Route>
-
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/home" element={<Home/>}></Route>
+          <Route path="/calculater" element={<Calc/>}></Route>
+          <Route path="/cards" element={<Cards/>}></Route>
+          <Route path="/country-api" element={<Count/>}></Route>
+          <Route path="/todo" element={<Toodo/>}></Route>
+          <Route path="/home"></Route>
+          <Route path="/navbar" element={<Navbar/>}></Route>
+          <Route path="/Contact" element={<Contact/>}></Route>
+          <Route path="/Aboutme" element={<Aboutme/>}></Route>
+          <Route path="*" element={<Notfound/>}></Route>  
+        </Routes>
       </Router>
-
-      
-
     </div>
   );
 }

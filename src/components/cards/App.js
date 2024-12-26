@@ -19,7 +19,7 @@ function App(){
   return(
     <div className='container'>
       {/* <h1 className='text-center my-4'>LISTE DES PROFILS</h1> */}
-      {/* <ListProfil/> */}
+      {/* <ListProfil/> */} 
       {/* <Counter/> */}
       {/* <Form/> */}
       {/* <h1>Liste des profiles</h1> */}

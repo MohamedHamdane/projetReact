@@ -14,19 +14,8 @@
     --secondaryColor : #db2b39 ;
     --textColor : #eee ;
 
-    /* --darkmode: var(--mainColor);
-    --lightmode: var(--mainColorLight) */
+    
 }
-
-/* header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    padding: 0 2rem;
-    background-color: var(--mainColor);
-    color: var(--textColor);
-} */
 
 header {
     position: fixed; /* Make the header fixed at the top */
@@ -111,28 +100,12 @@ header .nav_btn{
     }
 }
 
-
-
-/* Main.css */
-/* header {
-    background-color: white;
-    color: black;
-    transition: background-color 0.3s, color 0.3s;
-} */
-
 header.dark {
     background-color: #6767aa ;
     color: black;
 }
 
-/* html.dark{
-    background-color: #29335c;
-} */
 
-/* .all.dark{
-    background-color: #29335c;
-
-} */
 
 
 .dark-mode-toggle {
@@ -147,11 +120,9 @@ header.dark {
 .dark-mode-toggle:hover{
     background-color: #29335c;
     color: #eee;
-    /* transform: scale(1.2rem); */
 }
 
 
-/* Main.css */
 
 body {
     background-color: #6767aa;
@@ -164,7 +135,6 @@ body.dark-mode {
     color: white;
 }
 
-/* Light mode styles */
 #h11.dark-mode {
     font-family: monospace;
     line-height: 5rem;
