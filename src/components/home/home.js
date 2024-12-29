@@ -3,7 +3,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import './home.css'
 
 // Define translations
-const translations = {
+export const translations = {
   en: {
     title: "Connect with us ",
     subtitle: "We build custom software to help your business thrive",
