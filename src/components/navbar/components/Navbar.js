@@ -2,7 +2,6 @@ import {FaBars , FaTimes} from "react-icons/fa";
 import { useContext, useRef, useState } from "react";
 import "../styles/main.css"
 import { Link } from "react-router-dom";
-import { ThemeContext } from "../../context/ThemeContext";
 
 export const translations_nav = {
     en :{
@@ -15,34 +14,29 @@ export const translations_nav = {
     },
     dr :{
         title : "مرحبا",
-        subtitle : " . شكّل قدرك ، المستقبل كيناديك ",
+        subtitle : " شكّل القدر ديالك ، المستقبل كيناديك .",
     }
 
 }
 
 
-
-
 function Navbar(){
         const navRef = useRef();
-        const darkMode = useContext(ThemeContext);
         const [lang , setLang] = useState('en');
 
         const handleLanguageChange = (event) => {
             setLang(event.target.value);
         };
 
-        const textDirection = lang === 'dr' ? 'rlt' : 'ltr' ;
+        const textDirection = lang === 'dr' ? 'rtl' : 'ltr' ;
 
 
         const showNavbar = ()=> {
             navRef.current.classList.toggle("responsive_nav")
         }
     return(
-        <div className={`cont ${darkMode ? 'dark' : ''}`} dir={textDirection}>
+        <div >
         <header>
-        <label htmlFor="language-select" className={darkMode ? 'dark' : ''}>
-        </label>
             <h3>HAMDANE</h3>
             <nav ref={navRef}>
                 <Link to="/home">HOME</Link>
@@ -74,19 +68,21 @@ function Navbar(){
                 padding: '8px',
                 margin: '0',         
                 borderRadius: '4px',
-                border: '1px solid #ccc',
+                border: '1px solid #eee',
                 backgroundColor: 'transparent', 
-                color : '#29335c' ,
-                zIndex: '1000',    
+                color : 'black ' ,
+                zIndex: '1000',  
             }}
             >
             <option value="en">English</option>
             <option value="es">Spanish</option>
             <option value="dr">darija</option>
       </select>
-        <h1 id="h11" className={darkMode ? 'dark' : ''}>{translations_nav[lang].title}</h1>
-
-        <h2 id="h22" className={darkMode ? 'dark' : ''}>{translations_nav[lang].subtitle}</h2>
+      <div dir={textDirection}>
+        <h1 id="h11" >{translations_nav[lang].title}</h1>
+        <h2 id="h22" >{translations_nav[lang].subtitle}</h2>
+      </div>
+        
         </div>
     )
 }

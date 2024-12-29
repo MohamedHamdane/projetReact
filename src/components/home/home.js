@@ -45,9 +45,9 @@ export default function Home() {
                 padding: '8px',
                 margin: '0',         
                 borderRadius: '4px',
-                border: '1px solid #ccc',
+                border: '1px solid #eee',
                 backgroundColor: 'transparent', 
-                color : '#29335c' ,
+                color : 'black ' ,
                 zIndex: '1000',    
             }}
             >
